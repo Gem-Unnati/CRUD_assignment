@@ -1,0 +1,26 @@
+### GET ALL PRODUCTS
+GET http://localhost:4000/api/products
+
+### GET SINGLE PRODUCT
+GET http://localhost:4000/api/products/62dd71c5c679e46b89698be0
+
+### ADD ITEM
+POST http://localhost:4000/api/products
+Content-Type: application/json
+
+{
+  "title": "Samsung Galaxy M20",
+  "price": "RS. 11,000",
+  "details": "BLACK, 3GB RAM, 32GB STORAGE"
+}
+
+### DELETE ITEM
+DELETE http://localhost:4000/api/products/62de3cb4dde44a8ac114bcc7
+
+### UPDATE ITEM
+PUT http://localhost:4000/api/products/62dd71e2c679e46b89698be4
+Content-Type: application/json
+
+{
+  "price":"RS. 30000"
+}
